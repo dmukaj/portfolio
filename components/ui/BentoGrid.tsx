@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import Lottie from "lottie-react";
-import { GlobeDemo } from "./GlobeGrid";
 import animationData from "@/data/confetti.json";
 import { useState } from "react";
 import Button from "./Button";
@@ -41,7 +40,7 @@ export const BentoGridItem = ({
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   id: number;
-  img?: File | string;
+  img?: string;
   imgClassName?: string;
   spareImg?: string;
   titleClassName?: string;
@@ -97,7 +96,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-light text-[#6a6b83] text-sm lg:text-base z-10">
             {description}
           </div>
-          {id === 2 && <GlobeDemo />}
+          {/* {id === 2 && } */}
           {id === 3 && (
             <div className="flex gap-1 w-fit absolute -right-3 lg:gap-5 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
