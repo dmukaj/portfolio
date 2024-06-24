@@ -96,7 +96,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-light text-[#6a6b83] text-sm lg:text-base z-10">
             {description}
           </div>
-          {/* {id === 2 && } */}
+
           {id === 3 && (
             <div className="flex gap-1 w-fit absolute -right-3 lg:gap-5 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
@@ -109,23 +109,23 @@ export const BentoGridItem = ({
                 ].map((item) => (
                   <span
                     key={item}
-                    className="bg-[#10132e] py-2 px-3 lg:py-4 text-sm lg:text-lg opacity-60 rounded-lg text-center">
+                    className="bg-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
                     {item}
                   </span>
                 ))}
-                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-4 text-sm lg:text-lg opacity-60 rounded-lg text-center">
+                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
                   .
                 </span>
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-4 text-sm lg:text-lg opacity-60 rounded-lg text-center">
+                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
                   .
                 </span>
                 {["Nextjs", "Postman", "Mongo Db", "Docker", "Git"].map(
                   (item) => (
                     <span
                       key={item}
-                      className="bg-[#10132e] py-2 px-3 lg:py-4 text-sm lg:text-lg opacity-60 rounded-lg text-center">
+                      className="bg-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
                       {item}
                     </span>
                   )

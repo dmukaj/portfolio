@@ -8,17 +8,17 @@ import Link from "next/link";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="mb-40">
       <h1 className="heading">
         Check out my <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-20 sm:gap-y-24 lg:gap-y-40">
+      <div className="flex flex-wrap items-center justify-center p-4 mt-20 gap-x-20 gap-y-28">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:h-[30rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}>
             <PinContainer title={item.link} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96  overflow-hidden h-[20vh] mb-10">
                 <img src={item.img} alt="cover" />
               </div>
 

@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3",
     imgClassName: "w-full h-full ",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "",
     spareImg: "",
   },
   {
@@ -75,13 +75,7 @@ export const projects = [
     title: "Dev Finder ",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/dev-finder.jpg",
-    iconLists: [
-      "/re.svg",
-      "/stream.svg",
-      "/ts.svg",
-      "/nextjs.svg",
-      "docker.svg",
-    ],
+    iconLists: ["/stream.svg", "/ts.svg", "/nextjs.svg", "docker.svg"],
     link: "https://github.com/dmukaj/dev-finder",
   },
   {
@@ -113,14 +107,7 @@ export const projects = [
     title: "TO-DO App",
     des: "A simple app where you can create a todo list of your daily tasks.",
     img: "/todo-app.jpg",
-    iconLists: [
-      "/next.svg",
-      "/ts.svg",
-      "/stream.svg",
-      ,
-      "/docker.svg",
-      "/css.svg",
-    ],
+    iconLists: ["/next.svg", "/ts.svg", "/stream.svg", , "/docker.svg"],
     link: "https://github.com/dmukaj/todo-app",
   },
 ];
@@ -138,56 +125,6 @@ export const testimonials = [
     name: "William Shakespeare",
     title: "Hamlet",
   },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
-  },
-  {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
 ];
 
 export const workExperience = [
@@ -202,14 +139,14 @@ export const workExperience = [
     id: 2,
     title: "Mobile App Dev - JSM Tech",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Freelance App Dev Project",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
@@ -233,5 +170,23 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+  },
+];
+
+export const CARDS = [
+  {
+    id: 0,
+    description: "What to know more about me?",
+    content: "Click on the cards to learn  more",
+  },
+  {
+    id: 1,
+    description: "",
+    content: "",
+  },
+  {
+    id: 2,
+    description: "",
+    content: "",
   },
 ];
