@@ -1,10 +1,9 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
-import { PinContainer } from "./ui/3d-pin";
 import Link from "next/link";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -15,12 +14,16 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center p-4 mt-20 gap-x-20 gap-y-28">
         {projects.map((item) => (
           <div
-            className="lg:h-[30rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}>
-            <PinContainer title={item.link} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-96  overflow-hidden h-[20vh] mb-10">
-                <img src={item.img} alt="cover" />
-              </div>
+            className="lg:h-[40rem] h-[30rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            key={item.id}
+          >
+            <div className=" w-[80vw] h-[32rem] bg-black rounded-2xl p-4">
+              <Link
+                href={item.link}
+                className="relative flex items-center justify-center sm:w-96  overflow-hidden h-[20vh] mb-10 "
+              >
+                <Image src={item.img} alt="cover" width={350} height={200} />
+              </Link>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
@@ -31,7 +34,8 @@ const RecentProjects = () => {
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
-                }}>
+                }}
+              >
                 {item.des}
               </p>
 
@@ -43,8 +47,15 @@ const RecentProjects = () => {
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
-                      }}>
-                      <img src={icon} alt="icon5" className="p-2" />
+                      }}
+                    >
+                      <Image
+                        src={icon}
+                        alt="icon5"
+                        className="p-2"
+                        width={400}
+                        height={300}
+                      />
                     </div>
                   ))}
                 </div>
@@ -53,13 +64,14 @@ const RecentProjects = () => {
                   <Link
                     className="flex lg:text-lg md:text-xs text-sm text-purple z-50"
                     target="_blank"
-                    href="https://github.com/dmukaj">
+                    href="https://github.com/dmukaj"
+                  >
                     Check My GitHub
                   </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
-            </PinContainer>
+            </div>
           </div>
         ))}
       </div>

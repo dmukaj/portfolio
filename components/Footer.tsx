@@ -3,17 +3,12 @@ import React from "react";
 import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer id="contact" className="w-full mb-20 ">
-      <div className="w-full absolute left-0 -bottom-72 min-h-96 ">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50"
-        />
-      </div>
+      <div className="w-full absolute left-0 -bottom-72 min-h-96 "></div>
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="heading mb-10">
           Ready to take your website to{" "}
@@ -33,7 +28,7 @@ const Footer = () => {
         <div className="flex items-center space-x-5">
           {socialMedia.map((item) => (
             <div key={item.id} className="w-7 h-7 flex ">
-              <img src={item.img} />
+              <Image src={item.img} alt="icon" width={400} height={300} />
             </div>
           ))}
         </div>

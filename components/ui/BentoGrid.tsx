@@ -20,7 +20,8 @@ export const BentoGrid = ({
       className={cn(
         "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
         className
-      )}>
+      )}
+    >
       {children}
     </div>
   );
@@ -60,7 +61,8 @@ export const BentoGridItem = ({
         background: "rgb(2,0,36)",
         backgroundColor:
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,53,167,1) 35%, rgba(0,212,255,1) 100%)",
-      }}>
+      }}
+    >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="h-full w-full absolute">
           {img && (
@@ -89,7 +91,8 @@ export const BentoGridItem = ({
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:-10 "
-          )}>
+          )}
+        >
           <div className="font-sans font-normal text-neutral-600 text-lg dark:text-neutral-300">
             {title}
           </div>
@@ -99,7 +102,7 @@ export const BentoGridItem = ({
 
           {id === 3 && (
             <div className="flex gap-1 w-fit absolute -right-3 lg:gap-5 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 lg:gap-6">
                 {[
                   "React",
                   "React Native",
@@ -109,23 +112,25 @@ export const BentoGridItem = ({
                 ].map((item) => (
                   <span
                     key={item}
-                    className="bg-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
+                    className="bg-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center"
+                  >
                     {item}
                   </span>
                 ))}
-                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
+                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-3 text-xs lg:text-sm opacity-60 rounded-lg text-center">
                   .
                 </span>
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
+              <div className="flex flex-col gap-3 lg:gap-6">
+                <span className="bg-[#10132e] text-[#10132e] py-2 px-3 lg:py-3 text-xs lg:text-sm opacity-60 rounded-lg text-center">
                   .
                 </span>
                 {["Nextjs", "Postman", "Mongo Db", "Docker", "Git"].map(
                   (item) => (
                     <span
                       key={item}
-                      className="bg-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center">
+                      className="bg-[#10132e] py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center"
+                    >
                       {item}
                     </span>
                   )
