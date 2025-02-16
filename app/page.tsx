@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className=" bg-black-300 dark:bg-black-100 flex flex-col justify-center items-center overflow-hidden sm:px-10">
-      <div className=" max-w-7xl w-full flex flex-col gap-y-40">
+    <main className=" bg-black-300 dark:bg-black-100 flex flex-col justify-center place-content-center sm:px-10">
+      <div className="flex flex-col gap-y-40">
         <FloatingNav navItems={navItems} />
         <Hero />
         <Experiences />

@@ -14,7 +14,7 @@ const RecentProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         {projects.map((item) => (
           <div
-            className="w-full max-w-sm bg-black rounded-2xl p-4 flex flex-col"
+            className="w-full max-w-xl bg-black rounded-2xl p-4 flex flex-col"
             key={item.id}
           >
             <Link

@@ -10,20 +10,20 @@ const Hero = () => {
       <div>
         <Spotlight
           className=" -left-10 md:-left-32 md:-top-20 h-screen "
-          fill="white"
-        />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
           fill="purple"
         />
-        <Spotlight className=" top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight
+          className="top-20 left-full h-[80vh] w-[70vw]"
+          fill="purple"
+        />
+        <Spotlight className=" top-28 left-80 h-[90vh] w-[60vw]" fill="blue" />
       </div>
 
       <div>
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
       <div className="flex justify-center items-center relative z-10 h-screen">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center">
+        <div className="max-w-[89vw] lg:max-w-[60vw] flex flex-col items-center">
           <h2 className="text-lg lg:text-xl xl:text-2xl uppercase tracking-widest text-center max-w-80">
             Dajana&apos;s Portfolio
           </h2>

@@ -16,7 +16,7 @@ const Page: React.FC = () => {
 
   return (
     <div
-      className="bg-black-100 h-screen flex justify-center items-center bg-no-repeat bg-cover"
+      className="bg-black-100 h-screen flex justify-center items-center"
       //   style={{ backgroundImage: `url(${item.spareImg})` }}
     >
       <Button

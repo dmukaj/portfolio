@@ -56,18 +56,22 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-black z-[5000] px-4 py-3  items-center justify-center space-x-4",
+          "flex max-w-xl fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-black z-[5000] px-4 py-3  items-center justify-center space-x-4",
           className
-        )}>
+        )}
+      >
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
               "relative items-center flex space-x-1 text-white dark:hover:text-gray-500"
-            )}>
+            )}
+          >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="hidden sm:block text-sm md:text-md xl:text-lg hover:text-purple ">
+              {navItem.name}
+            </span>
           </Link>
         ))}
       </motion.div>
