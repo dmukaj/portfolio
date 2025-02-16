@@ -80,7 +80,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-3xl lg:text-4xl xl:text-5xl text-center;
   }
 
   .black-gradient {

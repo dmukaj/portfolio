@@ -7,69 +7,66 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div className="mb-40">
-      <h1 className="heading">
-        Check out my <span className="text-purple">recent projects</span>
+    <div className="flex flex-col justify-center items-center gap-y-16">
+      <h1 className="heading text-center">
+        Check Out My <span className="text-purple"> Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 mt-20 gap-x-20 gap-y-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         {projects.map((item) => (
           <div
-            className="lg:h-[40rem] h-[30rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="w-full max-w-sm bg-black rounded-2xl p-4 flex flex-col"
             key={item.id}
           >
-            <div className=" w-[80vw] h-[32rem] bg-black rounded-2xl p-4">
-              <Link
-                href={item.link}
-                className="relative flex items-center justify-center sm:w-96  overflow-hidden h-[20vh] mb-10 "
-              >
-                <Image src={item.img} alt="cover" width={350} height={200} />
-              </Link>
+            <Link
+              href={item.http || item.link}
+              className="relative flex items-center justify-center w-full h-[200px] mb-6"
+            >
+              <Image
+                src={item.img}
+                alt="cover"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </Link>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
+            <h1 className="font-bold text-white text-lg sm:text-xl md:text-2xl line-clamp-1">
+              {item.title}
+            </h1>
 
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
+            <Link href={`/projects/${item.id}`} className="block mt-2">
+              <p className="text-gray-400 text-sm sm:text-base line-clamp-2">
                 {item.des}
               </p>
+            </Link>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <Image
-                        src={icon}
-                        alt="icon5"
-                        className="p-2"
-                        width={400}
-                        height={300}
-                      />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <Link
-                    className="flex lg:text-lg md:text-xs text-sm text-purple z-50"
-                    target="_blank"
-                    href="https://github.com/dmukaj"
+            <div className="flex items-center justify-between mt-5">
+              <div className="flex items-center space-x-2">
+                {item.iconLists.map((icon, index) => (
+                  <div
+                    key={index}
+                    className="border border-white/[.2] rounded-full bg-black w-8 h-8 flex justify-center items-center"
                   >
-                    Check My GitHub
-                  </Link>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                    <Image
+                      src={icon}
+                      alt="icon"
+                      width={24}
+                      height={24}
+                      className="p-1"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center">
+                <Link
+                  className="text-purple text-xs lg:text-sm font-medium"
+                  target="_blank"
+                  href={item.link}
+                >
+                  Check My GitHub
+                </Link>
+                <FaLocationArrow className="ml-2 text-purple" />
               </div>
             </div>
           </div>
