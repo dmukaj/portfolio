@@ -5,6 +5,8 @@ import { useParams } from "next/navigation";
 import { projects } from "@/data";
 import Image from "next/image";
 import { Button } from "../../../components/ui/MovingBoarder";
+import { FaArrowLeft } from "react-icons/fa";
+import Link from "next/link";
 
 const Page: React.FC = () => {
   const params = useParams<{ id?: string }>();
@@ -19,6 +21,13 @@ const Page: React.FC = () => {
       className="bg-black-100 h-screen flex justify-center items-center"
       //   style={{ backgroundImage: `url(${item.spareImg})` }}
     >
+      <Link
+        href="/"
+        className="absolute top-10 left-10 flex justify-center items-center gap-x-2 text-white"
+      >
+        <FaArrowLeft size={24} />
+        <span>Back To Resume</span>
+      </Link>
       <Button
         key={item.id}
         duration={Math.floor(Math.random() * 10000 + 10000)}
