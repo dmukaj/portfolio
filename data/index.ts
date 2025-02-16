@@ -57,7 +57,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want me in your team?",
+    title: "Do you want me on your team?",
     description: "",
     className: "lg:col-span-3 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -153,7 +153,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "Crunchyroll",
+    title: "Crunchyroll Clone",
     subTitle: `🎬 Your Personal Streaming Service 🎬`,
     des: `A website where you can watch anime and manga. It's a copycat of the Crunchyroll website.`,
     longDes: `Crunchyroll is a streaming service that offers a wide range of anime and manga titles, including classics, new releases, and exclusive content. With its user-friendly interface and vast library, Crunchyroll provides a seamless experience for users of all ages. Whether you're a die-hard anime fan or a casual manga enthusiast, you can enjoy your favorite shows and stories with ease. Join the Crunchyroll community and discover new titles that you'll love. Start watching anime and manga today!`,
