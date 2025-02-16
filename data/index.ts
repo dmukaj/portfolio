@@ -209,6 +209,13 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+  {
+    id: 4,
+    title: "Technologies",
+    desc: "Responsive Design, REST APIs, JSON, AJAX.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
 ];
 
 // export const socialMedia = [

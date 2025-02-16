@@ -4,11 +4,11 @@ import { Button } from "./ui/MovingBoarder";
 
 const Experiences = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center ">
       <h1 className="heading mb-20">
         My <span className="text-purple ">Skills</span>
       </h1>
-      <div className="grid lg:grid-cols-4 grid-cols-1 ">
+      <div className="grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((item) => (
           <Button
             key={item.id}
