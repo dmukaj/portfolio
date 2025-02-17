@@ -19,7 +19,7 @@ export default function Home() {
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="slow"
+          speed="normal"
         />
         <Footer />
       </div>
