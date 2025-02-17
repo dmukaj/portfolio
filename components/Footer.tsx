@@ -14,7 +14,7 @@ const Footer = () => {
           Ready to take your website to
           <span className="text-purple"> another level?</span>
         </h1>
-        <p className="text-sm md:text-lg lg:text-xl text-black">
+        <p className="text-sm md:text-lg lg:text-xl dark:text-white text-black ">
           Reach me out and let discuss how I can help you achieve your goals.
         </p>
         <Link href="mailto:dajanacepele@gmail.com">
