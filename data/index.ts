@@ -183,52 +183,51 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
-    title: "Languages &  Frameworks",
-    desc: " HTML, CSS, JavaScript, React, React Native, Next.js, MongoDB, Docker, Prisma, NextAuth ",
+    title: "Languages & Frameworks",
+    desc: " HTML, CSS, JavaScript, Python, React, React Native, Typescript, Next.js",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Backend & Databases",
-    desc: "Node.js, Docker, Prisma, NextAuth, MongoDB, MySQL, PostgreSQL.",
+    title: "Backend",
+    desc: "Node.js",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 2,
+    title: "Databases",
+    desc: "MongoDB, MySQL, PostgreSQL",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 2,
+    title: "Cloud Platforms & Hosting",
+    desc: "AWS, GCP",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 2,
+    title: "Authentication & Security",
+    desc: "JWT, OAuth, Auth0, Firebase",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Tools and Libraries",
-    desc: "Visual Studio Code, Git, GitHub, Figma, Tailwind CSS, Bootstrap, Axios, Lodash, ShadCN, Mongoose ",
+    desc: "VS Code, Tailwind CSS, Axios, Mongoose, Prisma, Axios, ShadCN, ",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Technologies",
-    desc: "Responsive Design, REST APIs, JSON, AJAX.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
-  {
-    id: 4,
-    title: "Technologies",
-    desc: "Responsive Design, REST APIs, JSON, AJAX.",
+    title: "DevOps & Containerization",
+    desc: "Docker, CICD (GitHub Actions), Kubernetes, Docker Compose, Terraform",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
 ];
-
-// export const socialMedia = [
-//   {
-//     id: 1,
-//     img: "/git.svg",
-//   },
-//   {
-//     id: 2,
-//     img: "/insta.svg",
-//   },
-//   {
-//     id: 3,
-//     img: "/link.svg",
-//   },
-// ];

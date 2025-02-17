@@ -19,7 +19,7 @@ const Experiences = () => {
                 <p className=" lg:text-xl md:text-lg text-sm font-semibold">
                   {item.title}
                 </p>
-                <p className="lg:text-lg md:text-sm text-xs text-white-200">
+                <p className="lg:text-lg md:text-sm text-xs text-white-200 w-[80vw]">
                   {item.desc}
                 </p>
               </div>
