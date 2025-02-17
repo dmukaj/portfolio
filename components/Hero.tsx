@@ -6,22 +6,16 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div>
-      <div>
-        <Spotlight
-          className=" -left-10 md:-left-32 md:-top-20 h-screen "
-          fill="purple"
-        />
-        <Spotlight
-          className="top-20 left-full h-[80vh] w-[70vw]"
-          fill="purple"
-        />
-        <Spotlight className=" top-28 left-80 h-[90vh] w-[60vw]" fill="blue" />
+    <div className="overflow-hidden w-full">
+      <div className="">
+        <Spotlight className="h-[90vh] w-[100vw] -top-50" fill="purple" />
+
+        <Spotlight className="top-28 left-80 h-[90vh] w-[60vw]" fill="blue" />
       </div>
 
-      <div>
+      {/* <div>
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      </div>
+      </div> */}
       <div className="flex justify-center items-center relative z-10 h-screen">
         <div className="max-w-[89vw] lg:max-w-[60vw] flex flex-col items-center">
           <h2 className="text-lg lg:text-xl xl:text-2xl uppercase tracking-widest text-center max-w-80">
