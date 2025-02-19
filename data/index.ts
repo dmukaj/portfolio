@@ -49,9 +49,10 @@ export const gridItems = [
     id: 5,
     title: "Currently building a copycat of the Crunchyroll website",
     description: "It's a website where you can watch anime and manga.",
-    className: "md:col-span-3",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-48 h-full",
-    titleClassName: "justify-center md:justify-start lg:justify-center ",
+    className: "md:col-span-3 col-span-1",
+    imgClassName: "",
+    titleClassName:
+      "absolute w-2/3  md:w-full justify-center md:justify-start lg:justify-center ",
     img: "",
     spareImg: "/grid.svg",
   },
@@ -167,16 +168,34 @@ export const projects = [
 
 export const testimonials = [
   {
+    id: 1,
     quote:
-      "I am a Self-taught and compassionate healthcare professional transitioning to front-end web development.",
-    name: "Education and",
-    title: "Experience",
+      "As a self-taught developer with a background in healthcare, I bring a compassionate approach to front-end development, combining technical skills with a user-focused mindset.",
+    title: "Bridging Healthcare & Tech",
   },
   {
+    id: 2,
     quote:
-      "With over 2 years in HTML, CSS, JavaScript, and React. Meta Front-End Developer Certificate.",
-    name: "Healthcare",
-    title: "Experience",
+      "Transitioning from healthcare to front-end development has fueled my passion for creating intuitive and accessible digital experiences.",
+    title: "Passion for UX & Accessibility",
+  },
+  {
+    id: 3,
+    quote:
+      "My journey from healthcare to coding has strengthened my problem-solving skills, allowing me to craft seamless and efficient web solutions.",
+    title: "Problem-Solving Through Code",
+  },
+  {
+    id: 4,
+    quote:
+      "With a self-driven approach, I’ve transformed my career from patient care to front-end development, ensuring technology serves users effectively.",
+    title: "From Patient Care to Front-End",
+  },
+  {
+    id: 5,
+    quote:
+      "My experience in healthcare taught me the value of empathy, which I now apply to developing user-friendly and engaging web applications.",
+    title: "Empathy in Web Development",
   },
 ];
 

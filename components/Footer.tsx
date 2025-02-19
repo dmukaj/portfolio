@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <footer id="contact" className="w-full">
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="heading mb-10">
+        <h1 className="heading mb-10 w-[80vw]">
           Ready to take your website to
           <span className="text-purple"> another level?</span>
         </h1>
-        <p className="text-sm md:text-lg lg:text-xl dark:text-white text-black ">
+        <p className="text-sm md:text-lg lg:text-xl dark:text-white text-black px-4">
           Reach me out and let discuss how I can help you achieve your goals.
         </p>
         <Link href="mailto:dajanacepele@gmail.com">

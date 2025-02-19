@@ -8,9 +8,12 @@ const Hero = () => {
   return (
     <div className="overflow-hidden w-full">
       <div className="">
-        <Spotlight className="h-[90vh] w-[100vw] -top-50" fill="purple" />
+        <Spotlight
+          className="h-[90vh] w-[80vw] -top-50 left-50"
+          fill="purple"
+        />
 
-        <Spotlight className="top-28 left-80 h-[90vh] w-[60vw]" fill="blue" />
+        <Spotlight className="top-28 left-60 h-[90vh] w-[60vw]" fill="blue" />
       </div>
 
       {/* <div>

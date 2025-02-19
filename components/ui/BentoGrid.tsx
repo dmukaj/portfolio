@@ -90,28 +90,30 @@ export const BentoGridItem = ({
           </div>
 
           {id === 5 && (
-            <div className="flex gap-1 w-fit absolute right-0 lg:gap-5 lg:right-1">
-              <div className="flex flex-col gap-3 lg:gap-6">
-                {["React", "React Native", "Javascript", "MongoDb"].map(
+            <div className="flex gap-1 w-1/3 absolute md:right-0 -right-20 bottom-10 lg:gap-5 lg:right-1 sm:">
+              <div className="flex flex-col gap-3 lg:gap-6 w-[120px] ">
+                {["React", "CSS", "Javascript", "Python", "MongoDb"].map(
                   (item) => (
                     <span
                       key={item}
-                      className="bg-[#10132e] text-white py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center"
+                      className="bg-[#10132e] text-white py-2 lg:py-4 px-2 text-[10px] md:text-sm lg:text-base opacity-60 rounded-lg text-center"
                     >
                       {item}
                     </span>
                   )
                 )}
               </div>
-              <div className="flex flex-col gap-3 lg:gap-6">
-                {["Nextjs", "Postman", "Docker", "Git"].map((item) => (
-                  <span
-                    key={item}
-                    className="bg-[#10132e] text-white py-2 px-3 lg:py-4 text-xs lg:text-sm opacity-60 rounded-lg text-center"
-                  >
-                    {item}
-                  </span>
-                ))}
+              <div className="flex flex-col gap-3 lg:gap-6 w-[120px] ">
+                {["Nextjs", "React Native", "Docker", "Git", "Typescript"].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="bg-[#10132e] text-white py-2 lg:py-4 px-2 text-[10px] md:text-sm lg:text-base opacity-60 rounded-lg text-center"
+                    >
+                      {item}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           )}

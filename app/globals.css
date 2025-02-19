@@ -91,3 +91,40 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+.card-container {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #fff 10%,
+    #fff 80%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #fff 10%,
+    #fff 80%,
+    transparent
+  );
+}
+
+.about-card {
+  animation: autoRunSlider 20s linear infinite;
+  will-change: transform;
+  animation-delay: calc(var(--i) * 0.1s);
+  --i: 0;
+}
+
+@keyframes autoRunSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(500% * -1));
+  }
+}
+
+.card-container:hover .about-card {
+  animation-play-state: paused !important;
+}

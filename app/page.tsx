@@ -3,9 +3,9 @@ import { FloatingNav } from "../components/ui/FloatingNav";
 import Grid from "../components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import { navItems, testimonials } from "@/data";
-import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCard";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
@@ -16,11 +16,7 @@ export default function Home() {
         <Experiences />
         <RecentProjects />
         <Grid />
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="fast"
-        />
+        <AboutMe />
         <Footer />
       </div>
     </main>
