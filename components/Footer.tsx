@@ -25,10 +25,10 @@ const Footer = () => {
         <p className="lg:text-base text-sm lg:font-semibold font-light flex place-content-center">
           Copyright © 2024 Dajana Mukaj
         </p>
-        <div className="flex items-center gap-2 place-content-center">
-          <FaInstagram size={24} color="black" />
-          <CiLinkedin size={24} color="black" />
-          <FaGithub size={24} color="black" />
+        <div className="flex items-center gap-2 place-content-center text-black dark:text-white">
+          <FaInstagram size={24} />
+          <CiLinkedin size={24} />
+          <FaGithub size={24} />
         </div>
       </div>
     </footer>
