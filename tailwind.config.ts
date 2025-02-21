@@ -81,7 +81,18 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
       keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0", transform: "scale(0.5)" },
+          "50%": { opacity: ".8", transform: "scale(1.5)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        spinSlow: {
+          "0%": { pacity: "0", transform: "rotate(0deg)" },
+          "50%": { opacity: ".8", transform: "rotate(180deg)" },
+          "100%": { opacity: "1", transform: "rotate(360deg)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -159,6 +170,8 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        fadeIn: "fadeIn 0.8s ease-in-out",
+        spinSlow: "spin 0.8s ease-in-out ",
       },
     },
   },
