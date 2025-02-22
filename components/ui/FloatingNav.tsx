@@ -57,7 +57,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-xl w-[70vw] fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-gray-200 dark:bg-black z-[5000] p-4 items-center justify-center space-x-4",
+          "flex max-w-xl w-[90vw] md:w-[70vw] fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-gray-200 dark:bg-black z-[5000] p-4 items-center justify-center gap-4",
           className
         )}
       >
@@ -72,7 +72,7 @@ export const FloatingNav = ({
             </span>
           </Link>
         ))}
-        <ModeToggle />
+        <ModeToggle className="absolute right-6" />
       </motion.div>
     </AnimatePresence>
   );
