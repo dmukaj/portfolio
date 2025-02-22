@@ -79,13 +79,13 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col  p-5  "
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5  dark:bg-black bg-gray-300 text-black dark:text-white "
           )}
         >
-          <div className="font-sans font-normal text-white text-sm md:text-lg xl:text-xl dark:text-neutral-300 mb-3">
+          <div className="font-sans font-normal text-black text-sm md:text-lg xl:text-xl dark:text-neutral-300 mb-3">
             {title}
           </div>
-          <div className="font-sans font-light text-gray-400 text-xs md:text-sm lg:text-md xl:ext-lg z-10 ">
+          <div className="font-sans font-light dark:text-gray-400 text-black text-xs md:text-sm lg:text-md xl:ext-lg z-10 ">
             {description}
           </div>
 
@@ -118,8 +118,8 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative ">
-              <div className={`absolute -bottom-5 right-0`}>
+            <div className="mt-5 relative">
+              <div className={`absolute -bottom-5 right-0 `}>
                 <Lottie
                   animationData={animationData}
                   loop={copied}

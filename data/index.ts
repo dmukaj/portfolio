@@ -60,9 +60,9 @@ export const gridItems = [
     id: 6,
     title: "Do you want me on your team?",
     description: "",
-    className: "lg:col-span-3 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-3 md:col-span-3 w-full",
     imgClassName: "",
-    titleClassName: "justify-center gap-3 md:max-w-full max-w-60 text-center",
+    titleClassName: "justify-center gap-3 max-w-full text-center w-[100vw]",
     img: "",
   },
 ];

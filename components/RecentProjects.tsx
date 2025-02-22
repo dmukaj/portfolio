@@ -14,7 +14,7 @@ const RecentProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         {projects.map((item) => (
           <div
-            className="w-full max-w-xl bg-black rounded-2xl p-4 flex flex-col"
+            className="w-full max-w-xl dark:bg-black bg-gray-300 text-black dark:text-white rounded-2xl p-4 flex flex-col"
             key={item.id}
           >
             <Link
@@ -30,12 +30,12 @@ const RecentProjects = () => {
               />
             </Link>
 
-            <h1 className="font-bold text-white text-lg sm:text-xl md:text-2xl line-clamp-1">
+            <h1 className="font-bold  text-lg sm:text-xl md:text-2xl line-clamp-1">
               {item.title}
             </h1>
 
             <Link href={`/projects/${item.id}`} className="block mt-2">
-              <p className="text-gray-400 text-sm sm:text-base line-clamp-2">
+              <p className="dark:text-gray-400 text-sm sm:text-base line-clamp-2">
                 {item.des}
               </p>
             </Link>
@@ -45,7 +45,7 @@ const RecentProjects = () => {
                 {item.iconLists.map((icon, index) => (
                   <div
                     key={index}
-                    className="border border-white/[.2] rounded-full bg-black w-8 h-8 flex justify-center items-center"
+                    className="border border-white/[.2] rounded-full dark:bg-black bg-gray-400 w-8 h-8 flex justify-center items-center"
                   >
                     <Image
                       src={icon}

@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "../../lib/utils/cn";
 import Link from "next/link";
+import { ModeToggle } from "@/components/ThemeToggle";
 
 export const FloatingNav = ({
   navItems,
@@ -56,7 +57,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-xl w-[70vw] fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-black z-[5000] p-4 items-center justify-center space-x-4",
+          "flex max-w-xl w-[70vw] fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-gray-200 dark:bg-black z-[5000] p-4 items-center justify-center space-x-4",
           className
         )}
       >
@@ -66,11 +67,12 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn("relative items-center flex space-x-1")}
           >
-            <span className="text-sm md:text-lg xl:text-xl text-white hover:text-purple-500 ">
+            <span className="text-sm md:text-lg xl:text-xl text-black dark:text-white hover:text-purple-500 ">
               {navItem.name}
             </span>
           </Link>
         ))}
+        <ModeToggle />
       </motion.div>
     </AnimatePresence>
   );

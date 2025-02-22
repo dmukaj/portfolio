@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import { FloatingNav } from "../components/ui/FloatingNav";
 import Grid from "../components/Grid";
 import RecentProjects from "@/components/RecentProjects";
-import { navItems, testimonials } from "@/data";
+import { navItems } from "@/data";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/AboutMe";
