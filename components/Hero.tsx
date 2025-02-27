@@ -14,6 +14,10 @@ const Hero = () => {
           fill="purple"
         />
         <Spotlight className="top-28 left-60 h-[90vh] w-[60vw]" fill="blue" />
+        <Spotlight
+          className="-bottom-20 -left-50 h-[90vh] w-[90vw]"
+          fill="red"
+        />
       </div>
       <div className="flex justify-center items-center relative z-10 h-screen">
         <ModeToggle />

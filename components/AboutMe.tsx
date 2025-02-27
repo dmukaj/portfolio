@@ -14,7 +14,7 @@ const AboutMe = () => {
           {extendedTestimonials.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-start justify-center about-card w-full lg:w-[30vw] bg-gray-300 dark:bg-black text-black dark:text-white h-48 lg:h-80  rounded-xl p-4 shrink-0 gap-2"
+              className="flex flex-col items-start justify-center about-card w-full lg:w-[30vw] bg-gray-300 dark:bg-slate-900/[0.8] text-black dark:text-white h-48 lg:h-80  rounded-xl p-4 shrink-0 gap-2"
             >
               <h2 className="lg:text-xl md:text-lg text-sm font-semibold">
                 {item.title}

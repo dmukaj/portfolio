@@ -4,6 +4,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils/cn";
 
 const RecentProjects = () => {
   return (
@@ -11,10 +13,10 @@ const RecentProjects = () => {
       <h1 className="heading text-center">
         Check Out My <span className="text-purple"> Projects</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 px-4">
         {projects.map((item) => (
           <div
-            className="w-full max-w-xl dark:bg-black bg-gray-300 text-black dark:text-white rounded-2xl p-4 flex flex-col"
+            className=" p-6 relative w-full max-w-xl  bg-gray-300 text-black rounded-2xl flex flex-col dark:bg-slate-900/[0.8] dark:text-white"
             key={item.id}
           >
             <Link
@@ -26,6 +28,7 @@ const RecentProjects = () => {
                 alt="cover"
                 layout="fill"
                 objectFit="cover"
+                sizes="(max-width: 768px) 100vw, 1200px"
                 className="rounded-lg"
               />
             </Link>

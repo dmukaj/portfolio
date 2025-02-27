@@ -5,7 +5,6 @@
 @layer base {
   html,
   body {
-    @apply overflow-x-hidden;
   }
   :root {
     --background: 0 0% 100%;
@@ -67,6 +66,8 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
   }
 }
 
@@ -88,7 +89,7 @@ html {
 
 body,
 main {
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  @apply text-foreground transition-colors duration-300;
 }
 
 @layer utilities {
@@ -125,6 +126,12 @@ main {
   --i: 0;
 }
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 @keyframes autoRunSlider {
   from {
     transform: translateX(0);
@@ -136,4 +143,49 @@ main {
 
 .card-container:hover .about-card {
   animation-play-state: paused !important;
+}
+
+.dark .projects::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transform: scale(1.02) !important; /* Expands the pseudo-element */
+  background-image: conic-gradient(
+    from var(--angle),
+    #a30909,
+    #1710e6,
+    #ce0cf5,
+    #ff4545
+  ) !important;
+  translate: -3% -4% !important;
+  z-index: -1 !important;
+  animation: spin 5s linear infinite;
+}
+
+.projects::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

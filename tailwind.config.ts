@@ -32,6 +32,10 @@ const config = {
           100: "#000319",
           200: "rgba(17, 25, 40, 0.75)",
           300: "rgba(255, 255, 255, 0.125)",
+          400: "rgba(255, 255, 255, 0.25)",
+          500: "rgba(255, 255, 255, 0.5)",
+          600: "rgba(255, 255, 255, 0.75)",
+          900: "rgba(255, 255, 255, 0.9)",
         },
         white: {
           DEFAULT: "#FFF",
@@ -75,6 +79,8 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        conicGradient:
+          "conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,6 +89,10 @@ const config = {
       },
 
       keyframes: {
+        spin: {
+          "0%": { "--angle": "0deg" },
+          "100%": { "--angle": "360deg" },
+        },
         fadeIn: {
           "0%": { opacity: "0", transform: "scale(0.5)" },
           "50%": { opacity: ".8", transform: "scale(1.5)" },
@@ -161,6 +171,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        spin: "spin 3s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
         first: "moveVertical 30s ease infinite",

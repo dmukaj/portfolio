@@ -72,7 +72,7 @@ export const FloatingNav = ({
             </span>
           </Link>
         ))}
-        <ModeToggle className="absolute right-6" />
+        {/* <ModeToggle className="absolute right-6" /> */}
       </motion.div>
     </AnimatePresence>
   );

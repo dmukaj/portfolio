@@ -54,7 +54,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.7] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -79,7 +79,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5  dark:bg-black bg-gray-300 text-black dark:text-white "
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5  dark:bg-slate-900/[0.8] bg-gray-300 text-black dark:text-white "
           )}
         >
           <div className="font-sans font-normal text-black text-sm md:text-lg xl:text-xl dark:text-neutral-300 mb-3">
@@ -96,7 +96,7 @@ export const BentoGridItem = ({
                   (item) => (
                     <span
                       key={item}
-                      className="bg-[#10132e] text-white py-2 lg:py-4 px-2 text-[10px] md:text-sm lg:text-base opacity-60 rounded-lg text-center"
+                      className="bg-slate-800/[0.8] text-white py-2 lg:py-4 px-2 text-[10px] md:text-sm lg:text-base opacity-60 rounded-lg text-center"
                     >
                       {item}
                     </span>
@@ -108,7 +108,7 @@ export const BentoGridItem = ({
                   (item) => (
                     <span
                       key={item}
-                      className="bg-[#10132e] text-white py-2 lg:py-4 px-2 text-[10px] md:text-sm lg:text-base opacity-60 rounded-lg text-center"
+                      className="bg-slate-800/[0.8] text-white py-2 lg:py-4 px-2 text-[10px] md:text-sm lg:text-base opacity-60 rounded-lg text-center"
                     >
                       {item}
                     </span>
