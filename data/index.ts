@@ -69,16 +69,23 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
-    title: "My Library App",
-    subTitle: `📚 Your Personal Book Collection 📚`,
-    des: "My first website. An online library where you can search and purchase your favorite books. Build with javascript, react,  mongodb and tailwidcss ",
-    longDes: `My Library App is my first website, designed as an online library where you can search, explore, and purchase your favorite books with ease. Built with JavaScript, React, MongoDB, and Tailwind CSS, this platform offers a smooth and responsive user experience for book lovers. Whether you're looking for bestsellers, hidden gems, or academic reads, My Library App makes discovering and buying books simple and enjoyable. Dive into the world of literature and start building your perfect book collection today!`,
-    img: "/library.jpg",
+    id: 2,
+    title: "Thinkr",
+    subTitle: "🛒 Smart Shopping Assistant 🧠",
+    des: "Thinkr is a smart shopping assistant that lets you create a grocery or shopping list, then searches multiple online stores at the same time to find you the best prices. Built with TypeScript, React, Python, FastAPI, and Playwright.",
+    longDes:
+      "Thinkr is a powerful web application that helps you save time and money while shopping. You can create a list of items you want to buy, and Thinkr will automatically search multiple online grocery and retail stores in real time using Playwright. The app also integrates with AI — so you can chat with the assistant or ask it to find the best prices for your list. Thinkr is built with a React frontend (TypeScript) and a Python FastAPI backend for maximum performance and flexibility.",
+    img: "/thinkr.png",
     spareImg: "/grid.svg",
-    iconLists: ["/docker.svg", "/re.svg", "/javascript.svg", "/css.svg"],
-    link: "/https://github.com/dmukaj/library-app",
-    http: "https://library.dajana.dev",
+    iconLists: [
+      "/ts.svg",
+      "/re.svg",
+      "/python.svg",
+      "/fastapi.svg",
+      "/playwright.svg",
+    ],
+    link: "https://github.com/dmukaj/thinkr",
+    http: "https://thinkr.dajana.dev",
   },
   {
     id: 2,
