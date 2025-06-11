@@ -80,9 +80,9 @@ export const projects = [
     iconLists: [
       "/ts.svg",
       "/re.svg",
-      "/python.svg",
+      "/python.jpg",
       "/fastapi.svg",
-      "/playwright.svg",
+      "/playwright.webp",
     ],
     link: "https://github.com/dmukaj/thinkr",
     http: "https://thinkr.dajana.dev",
