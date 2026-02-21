@@ -9,7 +9,6 @@ const AboutMe = () => {
         More <span className="text-purple ">About Me</span>
       </h1>
       <div className="w-[90vw] overflow-hidden relative ">
-        {/* Sliding container */}
         <div className="flex gap-6 px-4 card-container">
           {extendedTestimonials.map((item, index) => (
             <div

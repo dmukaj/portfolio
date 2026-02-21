@@ -4,7 +4,7 @@ import { Button } from "./ui/MovingBoarder";
 
 const Experiences = () => {
   return (
-    <div className="flex flex-col justify-center items-center ">
+    <div id="skills" className="flex flex-col justify-center items-center ">
       <h1 className="heading mb-20">
         My <span className="text-purple ">Skills</span>
       </h1>

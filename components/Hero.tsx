@@ -2,13 +2,12 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Button from "./ui/Button";
-import { FaLocationArrow } from "react-icons/fa6";
 import { ModeToggle } from "./ThemeToggle";
 
 const Hero = () => {
   return (
     <div className="overflow-hidden w-full">
-      <div className="">
+      <div>
         <Spotlight
           className="h-[90vh] w-[80vw] -top-50 left-50"
           fill="purple"
@@ -27,14 +26,14 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="text-center text-2xl md:text-4xl lg:text-6xl"
-            words="Building Scalable, High-Performance Applications with Precision and Innovation in Next.js and React. 🚀"
+            words="Full-Stack Developer Crafting Scalable, Secure, and User-Focused Applications"
           />
           <p className=" text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
             Hi, I am Dajana Mukaj, a developer based in Ohio, USA.
           </p>
 
           <a href="#about">
-            <Button title="Show my work" icon={<FaLocationArrow />} />
+            <Button title="Show My Work" />
           </a>
         </div>
       </div>

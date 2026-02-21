@@ -19,7 +19,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
-        className
+        className,
       )}
     >
       {children}
@@ -33,7 +33,6 @@ export const BentoGridItem = ({
   title,
   description,
   imgClassName,
-  spareImg,
   className,
   titleClassName,
 }: {
@@ -55,7 +54,7 @@ export const BentoGridItem = ({
     <div
       className={cn(
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.7] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-        className
+        className,
       )}
       style={{
         background: "rgb(2,0,36)",
@@ -79,7 +78,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5  dark:bg-slate-900/[0.8] bg-gray-300 text-black dark:text-white "
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5  dark:bg-slate-900/[0.8] bg-gray-300 text-black dark:text-white ",
           )}
         >
           <div className="font-sans font-normal text-black text-sm md:text-lg xl:text-xl dark:text-neutral-300 mb-3">
@@ -100,7 +99,7 @@ export const BentoGridItem = ({
                     >
                       {item}
                     </span>
-                  )
+                  ),
                 )}
               </div>
               <div className="flex flex-col gap-3 lg:gap-6 w-[120px] ">
@@ -112,7 +111,7 @@ export const BentoGridItem = ({
                     >
                       {item}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -126,7 +125,7 @@ export const BentoGridItem = ({
                   autoplay={copied}
                 />
                 <Button
-                  title={copied ? "Email copied" : "Copy Email"}
+                  title={copied ? "Email Copied" : "Copy My Email"}
                   icon={<IoCopyOutline />}
                   otherClasses="!bg-[#161a31]"
                   handleClick={handleCopy}

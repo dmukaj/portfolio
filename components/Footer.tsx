@@ -11,19 +11,20 @@ const Footer = () => {
     <footer id="contact" className="w-full">
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="heading mb-10 w-[80vw]">
-          Ready to take your website to
-          <span className="text-purple"> another level?</span>
+          Let’s Build Something
+          <span className="text-purple"> Meaningful </span>
+          Together
         </h1>
         <p className="text-sm md:text-lg lg:text-xl dark:text-white text-black px-4">
-          Reach me out and let discuss how I can help you achieve your goals.
+          Reach me out and let discuss how I can help your team.
         </p>
         <Link href="mailto:dajanacepele@gmail.com">
-          <Button title="Let's get in touch" icon={<FaLocationArrow />} />
+          <Button title="Let's Get In Touch" icon={<FaLocationArrow />} />
         </Link>
       </div>
       <div className="flex my-10 items-center justify-center gap-6">
         <p className="lg:text-base text-sm lg:font-semibold font-light flex place-content-center">
-          Copyright © 2024 Dajana Mukaj
+          Copyright © 2026 Dajana Mukaj
         </p>
         <div className="flex items-center gap-2 place-content-center text-black dark:text-white">
           <FaInstagram size={24} />

@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { cn } from "../../lib/utils/cn";
 import Link from "next/link";
-import { ModeToggle } from "@/components/ThemeToggle";
 
 export const FloatingNav = ({
   navItems,
@@ -26,7 +25,6 @@ export const FloatingNav = ({
   const [visible, setVisible] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
@@ -58,7 +56,7 @@ export const FloatingNav = ({
         }}
         className={cn(
           "flex max-w-xl w-[90vw] md:w-[70vw] fixed top-10 inset-x-0 mx-auto border border-gray-400 rounded-full bg-gray-200 dark:bg-black z-[5000] p-4 items-center justify-center gap-4",
-          className
+          className,
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
@@ -72,7 +70,6 @@ export const FloatingNav = ({
             </span>
           </Link>
         ))}
-        {/* <ModeToggle className="absolute right-6" /> */}
       </motion.div>
     </AnimatePresence>
   );

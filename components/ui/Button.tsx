@@ -8,7 +8,7 @@ const Button = ({
   className,
 }: {
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   handleClick?: () => void;
   otherClasses?: string;
   className?: string;
