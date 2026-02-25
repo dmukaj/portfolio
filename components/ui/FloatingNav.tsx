@@ -65,7 +65,7 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn("relative items-center flex space-x-1")}
           >
-            <span className="text-sm md:text-lg xl:text-xl text-black dark:text-white hover:text-purple-500 ">
+            <span className="text-sm md:text-lg xl:text-xl text-black dark:text-white hover:text-blue-700 ">
               {navItem.name}
             </span>
           </Link>

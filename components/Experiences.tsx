@@ -6,7 +6,7 @@ const Experiences = () => {
   return (
     <div id="skills" className="flex flex-col justify-center items-center ">
       <h1 className="heading mb-20">
-        My <span className="text-purple ">Skills</span>
+        My <span className="text-blue-700 ">Skills</span>
       </h1>
       <div className="grid lg:grid-cols-4 grid-cols-1 gap-10 ">
         {workExperience.map((item) => (

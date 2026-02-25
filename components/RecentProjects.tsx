@@ -4,8 +4,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils/cn";
 
 const RecentProjects = () => {
   return (
@@ -14,7 +12,7 @@ const RecentProjects = () => {
       id="projects"
     >
       <h1 className="heading text-center">
-        Check Out My <span className="text-purple"> Projects</span>
+        Check Out My <span className="text-blue-700"> Projects</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 px-4">
         {projects.map((item) => (
@@ -38,7 +36,7 @@ const RecentProjects = () => {
             </h1>
 
             <Link href={`/projects/${item.id}`} className="block mt-2">
-              <p className="dark:text-gray-400 text-sm sm:text-base line-clamp-2">
+              <p className="dark:text-gray-400 text-sm sm:text-base line-clamp-2 dark:hover:text-white hover:text-blue-700">
                 {item.des}
               </p>
             </Link>
@@ -63,13 +61,13 @@ const RecentProjects = () => {
 
               <div className="flex items-center">
                 <Link
-                  className="text-purple text-xs lg:text-sm font-medium"
+                  className="text-blue-700 text-xs lg:text-sm font-medium"
                   target="_blank"
                   href={item.link}
                 >
                   Check My GitHub
                 </Link>
-                <FaLocationArrow className="ml-2 text-purple" />
+                <FaLocationArrow className="ml-2 text-blue-700" />
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div className=" flex flex-col justify-center items-center">
       <h1 className="heading mb-20">
-        More <span className="text-purple ">About Me</span>
+        More <span className="text-blue-700 ">About Me</span>
       </h1>
       <div className="w-[90vw] overflow-hidden relative ">
         <div className="flex gap-6 px-4 card-container">

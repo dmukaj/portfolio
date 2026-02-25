@@ -6,7 +6,7 @@ const Grid = () => {
   return (
     <section id="about">
       <h1 className="heading text-center mb-20">
-        Background, Focus & <span className="text-purple"> Priorities</span>
+        Background, Focus & <span className="text-blue-700"> Priorities</span>
       </h1>
       <BentoGrid className="w-full grid lg:grid-cols-3 px-4">
         {gridItems.map((item, i) => (

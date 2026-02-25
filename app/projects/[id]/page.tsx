@@ -4,9 +4,9 @@ import React from "react";
 import { useParams } from "next/navigation";
 import { projects } from "@/data";
 import Image from "next/image";
-import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 import { motion, useTime, useTransform } from "framer-motion";
+import Button from "@/components/ui/Button";
 
 const Page: React.FC = () => {
   const params = useParams<{ id?: string }>();
@@ -23,19 +23,15 @@ const Page: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-10">
       <Link
-        href="/"
+        href="/#projects"
         className="fixed top-6 left-6 z-50 flex items-center gap-2 text-black dark:text-white"
       >
-        <FaArrowLeft size={20} />
-        <span>Back To Resume</span>
+        <Button title="Back To Projects" />
       </Link>
 
       <div className="relative w-full max-w-5xl">
         <div className="relative z-10 rounded-2xl border border-neutral-200 bg-gray-100 p-6 text-black shadow-sm dark:border-slate-800 dark:bg-black-100 dark:text-white">
-          {/* Side-by-side layout */}
           <div className="flex flex-col gap-6 md:flex-row md:items-start">
-            {/* Image column */}
-
             <div className="relative lg:w-[38%] h-[500px] md:h-[620px] rounded-xl border border-neutral-200 dark:border-slate-800 bg-white dark:bg-black flex items-center justify-center">
               <Image
                 src={item.img}
@@ -46,7 +42,6 @@ const Page: React.FC = () => {
               />
             </div>
 
-            {/* Text column */}
             <div className="w-full md:w-[60%]">
               <h1 className="text-2xl font-bold md:text-3xl lg:text-4xl bg-gradient-to-tr from-red-500 to-blue-500 text-transparent bg-clip-text">
                 {item.title}
@@ -86,7 +81,6 @@ const Page: React.FC = () => {
           </div>
         </div>
 
-        {/* animated border glow */}
         <motion.div
           className="absolute -inset-1.5 rounded-2xl"
           style={{

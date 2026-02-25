@@ -77,7 +77,7 @@ export const projects = [
     subTitle: "Personal Portfolio",
     des: "My portfolio site showcasing my projects, skills, and contact info.",
     longDes:
-      "A personal portfolio website built to highlight my work as a software developer student, including featured projects, technical skills, and ways to get in touch.",
+      "Portfolio Website is a personal web application designed to showcase my technical skills, projects, and professional background as a software developer. The site serves as a centralized hub where visitors can explore detailed information about my work, including full-stack applications, DevOps projects, and AI-powered tools, along with links to live demos and source code. Built with modern web technologies, the portfolio emphasizes responsive design, clean UI/UX, and clear navigation to ensure an engaging experience across devices.",
     img: "/portfolio.png",
     spareImg: "/grid.svg",
     iconLists: ["/re.svg", "/next.svg", "/ts.svg"],
@@ -90,7 +90,7 @@ export const projects = [
     subTitle: "Smart Shopping Assistant",
     des: "A smart shopping assistant that builds a list and searches multiple stores to compare prices in real time.",
     longDes:
-      "Thinkr is a full-stack app with a React/Next.js frontend and a FastAPI/Node.js backend. It integrates APIs and automation to search multiple online stores and helps users compare prices efficiently.",
+      "Thinkr is a full-stack, AI-powered decision support application designed to help users make smarter purchasing choices by aggregating and analyzing real-world data from multiple online sources. The platform features a modern React/Next.js frontend and a FastAPI/Node.js backend that work together to search numerous online stores, retrieve product information through APIs and automated web scraping, and present clear price comparisons in a single interface. By combining external data sources, automation, and large language models, Thinkr transforms scattered product listings into structured insights, enabling users to quickly identify the best value options without manually browsing multiple websites. The system leverages asynchronous processing to handle data collection efficiently and delivers results through an intuitive, responsive UI, demonstrating advanced full-stack development, API integration, and real-world problem solving at scale.",
     img: "/thinkr.jpeg",
     spareImg: "/grid.svg",
     iconLists: [
@@ -109,7 +109,7 @@ export const projects = [
     subTitle: "Nutrition & Macro Tracking",
     des: "A nutrition app to calculate daily macros based on goals and track meals.",
     longDes:
-      "My Daily Macros helps users calculate personalized macro targets and track meals. Built as a responsive web app with modern UI and data-driven components.",
+      "My Daily Macros is a full-stack nutrition tracking web app built with Next.js (App Router), NextAuth, Prisma, and MongoDB. Users can create an account and securely log in, calculate a personalized daily calorie + macro target from their BMR, and log foods into meal categories (breakfast, lunch, dinner, snacks). The dashboard includes a calendar-based history view, allowing users to select any date and instantly see their exact intake totals, meal breakdown tables, and macro visualizations. All data is user-scoped and persisted in MongoDB, with server-side route handlers protecting sensitive operations and ensuring clean, accurate date-based queries.",
     img: "/macros.svg",
     spareImg: "/grid.svg",
     iconLists: ["/javascript.svg", "/re.svg", "/next.svg", "/docker.svg"],
@@ -122,12 +122,12 @@ export const projects = [
     subTitle: "iOS App",
     des: "An iOS app project focused on a clean mobile experience (built and deployed using Expo).",
     longDes:
-      "A React Native + Expo iOS application built to practice mobile UI patterns and deployment workflows.",
+      "Smart Lights is a cross-platform mobile application built with React Native, Expo, and TypeScript that enables users to control a network-connected smart light device directly from their phone. The app features a clean tab-based interface where users can toggle the light’s power state, choose from a palette of preset colors, and send real-time RGB commands to the device over the local network via HTTP requests. The device’s IP address is stored locally for persistent connectivity, allowing seamless control without repeated setup. Designed with cross-platform compatibility in mind, the application supports iOS, Android, and web environments, incorporates responsive layouts, theming, and haptic feedback for an intuitive user experience, and demonstrates integration between a mobile frontend and IoT hardware using lightweight REST-style communication.",
     img: "/smart-light.jpeg",
     spareImg: "/grid.svg",
     iconLists: ["/dock.svg", "/ts.svg"],
-    link: "https://smart-lights.dajana.dev",
-    http: "https://smart-lights.dajana.dev",
+    link: "https://github.com/dmukaj/smart-lights",
+    http: "",
   },
   {
     id: 5,
@@ -135,7 +135,7 @@ export const projects = [
     subTitle: "iOS App",
     des: "An iOS app project built with Expo as part of my mobile development work.",
     longDes:
-      "BusyBee is an iOS application built with React Native and Expo to strengthen mobile development skills and deployment practices.",
+      "BusyBee is an AI-powered mobile study app that helps users turn their learning materials into interactive quizzes for more effective practice. Built as a full-stack application with a React Native (Expo) iOS frontend and a backend powered by FastAPI and Node.js services. This app allows users to create quizzes from typed topics, uploaded documents, images, or photos taken directly from handwritten notes or textbooks. The system processes these inputs using document parsing, optical character recognition, and large language models to generate questions, answers, and explanations at a chosen difficulty level. Users can take quizzes with immediate feedback, save them to a personal library, and track their performance over time, while the app maintains a clean, engaging interface with features like camera integration, file uploads, secure storage, and smooth animations. BusyBee demonstrates full-stack mobile development, AI integration, and the ability to build a practical product that transforms raw study content into structured, interactive learning experiences.",
     img: "/busybee.jpeg",
     spareImg: "/grid.svg",
     iconLists: ["/dock.svg", "/ts.svg", "/python.jpg"],
@@ -148,7 +148,7 @@ export const projects = [
     subTitle: "Informational Website",
     des: "A website introducing the tools and services provided by Kube Pilot.",
     longDes:
-      "Kube Pilot is a web project focused on presenting services and tooling clearly, with a modern responsive UI.",
+      "Kube Pilot is a marketing/informational website for a DevOps business that specializes in Kubernetes-based infrastructure solutions. The site’s purpose is to present the company’s services, explain the value of Kubernetes adoption, showcase capabilities, and provide a way for potential clients to learn about and contact the business. It does not manage clusters directly — it functions as a professional web presence for a technical services company.",
     img: "/kube-pilot.png",
     spareImg: "/grid.svg",
     iconLists: ["/ts.svg", "/javascript.svg", "/css.svg"],

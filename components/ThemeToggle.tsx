@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import { cn } from "../lib/utils/cn";
@@ -20,7 +19,7 @@ export function ModeToggle({ className }: { className?: string }) {
       suppressHydrationWarning
       className={cn(
         "absolute top-4 right-2 text-black dark:text-white",
-        className
+        className,
       )}
     >
       {mounted && resolvedTheme && resolvedTheme === "dark" ? (
