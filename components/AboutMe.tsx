@@ -4,7 +4,7 @@ import { testimonials } from "@/data/index";
 const AboutMe = () => {
   const extendedTestimonials = [...testimonials, ...testimonials];
   return (
-    <div className=" flex flex-col justify-center items-center">
+    <div className=" flex flex-col justify-center items-center" id="about-me">
       <h1 className="heading mb-20">
         More <span className="text-blue-700 ">About Me</span>
       </h1>

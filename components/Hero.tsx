@@ -32,7 +32,7 @@ const Hero = () => {
             Hi, I am Dajana Mukaj, a developer based in Ohio, USA.
           </p>
 
-          <a href="#about">
+          <a href="#projects">
             <Button title="Show My Work" />
           </a>
         </div>

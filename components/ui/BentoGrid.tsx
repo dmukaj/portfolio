@@ -89,7 +89,7 @@ export const BentoGridItem = ({
           </div>
 
           {id === 5 && (
-            <div className="flex gap-1 w-1/3 absolute md:right-0 -right-20 bottom-10 lg:gap-5 lg:right-1 sm:">
+            <div className="flex gap-1 w-1/3 absolute md:right-0 -right-28 -bottom-2 lg:gap-5 lg:right-1">
               <div className="flex flex-col gap-3 lg:gap-6 w-[120px] ">
                 {["React", "CSS", "Javascript", "Python", "MongoDb"].map(
                   (item) => (

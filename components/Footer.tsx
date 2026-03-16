@@ -27,9 +27,15 @@ const Footer = () => {
           Copyright © 2026 Dajana Mukaj
         </p>
         <div className="flex items-center gap-2 place-content-center text-black dark:text-white">
-          <FaInstagram size={24} />
-          <CiLinkedin size={24} />
-          <FaGithub size={24} />
+          <Link href="https://www.instagram.com/" target="_blank">
+            <FaInstagram size={24} />
+          </Link>
+          <Link href="https://www.linkedin.com/in/dajana-mukaj" target="_blank">
+            <CiLinkedin size={24} />
+          </Link>
+          <Link href="https://github.com/dmukaj" target="_blank">
+            <FaGithub size={24} />
+          </Link>
         </div>
       </div>
     </footer>

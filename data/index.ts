@@ -1,7 +1,7 @@
 // Updated to match your resume (Dajana_Mukaj_Resume.pdf) :contentReference[oaicite:0]{index=0}
 
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "About", link: "#about-me" },
   { name: "Projects", link: "#projects" },
   { name: "Skills", link: "#skills" },
   { name: "Contact", link: "#contact" },
@@ -51,8 +51,8 @@ export const gridItems = [
     id: 5,
     title: "Focused on full-stack web + iOS app development",
     description:
-      "React/Next.js + FastAPI/Node.js, databases (MongoDB/PostgreSQL), secure auth, and Docker containerization.",
-    className: "md:col-span-3 col-span-1",
+      "React, Next.js, FastAPI, Node.js, Databases, Secure auth, Docker, Github.",
+    className: "md:col-span-3 col-span-1 ",
     imgClassName: "",
     titleClassName:
       "absolute w-2/3  md:w-full justify-center md:justify-start lg:justify-center ",
