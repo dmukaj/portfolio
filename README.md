@@ -25,9 +25,13 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Features
 Responsive portfolio layout for desktop and mobile
+
 Project showcase with descriptions and links to GitHub repositories
+
 Clear navigation to highlight skills, projects, and experience
+
 Optimized performance using Next.js App Router
+
 Modern UI styling with reusable components
 
 ## Learn More
