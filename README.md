@@ -1,4 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The site showcases my software engineering projects, technical skills, and experience building full-stack applications, AI tools, and DevOps solutions.
+
+The goal of this portfolio is to provide a centralized place where recruiters, collaborators, and developers can explore my work, view live projects, and access the source code for the applications I have built.
 
 ## Getting Started
 
@@ -19,6 +22,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Features
+Responsive portfolio layout for desktop and mobile
+Project showcase with descriptions and links to GitHub repositories
+Clear navigation to highlight skills, projects, and experience
+Optimized performance using Next.js App Router
+Modern UI styling with reusable components
 
 ## Learn More
 
